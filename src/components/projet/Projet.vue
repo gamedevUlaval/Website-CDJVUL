@@ -1,58 +1,78 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div>
+    <h1>Projets du club</h1>
+    <div v-for="(projet,index) in projets" v-bind:key="index" class="project-box">
+      <hr>
+      <img class="project-image" v-bind:src="projet.imagePath" alt="image could not be displayed">
+      <span class="project-description">
+        <h2>{{projet.title}}</h2>
+        <h5>{{projet.description}}</h5>
+        <div v-if="projet.participants" class="project-participants">
+          <span class="project-bold-text">Participants: </span>
+          <span v-for="participant in projet.participants" v-bind:key="participant">{{participant}}</span>
+        </div>
+        <div v-if="projet.event" class="project-event">
+          <span class="project-bold-text">Event:</span>
+          {{projet.event}}
+        </div>
+      </span>
+    </div>
+    <hr>
+    <br>
   </div>
 </template>
 
 <script>
+import * as projectInformation from "./Projet.js"
 export default {
-  name: 'Projet',
-  props: {
-    msg: String
+  name: "Projet",
+  data: () => ({
+    projets: []
+  }),
+  async created() {
+      this.projets = projectInformation.projets;
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.project-image {
+  height: 200px;
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.project-description {
+  float: left;
+  text-align: justify;
+  margin: 20px;
+  margin-top: 0;
+  width: calc(100% - 280px)
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+.project-box {
+  height: 250px;
 }
-a {
-  color: #42b983;
+.project-participants {
+  float: left;
+  text-align: left;
+  width: 75%;
+}
+.project-event {
+  float: left;
+  width: 25%;
+  text-align: right;
+}
+.project-bold-text {
+  font-weight:bold;
+}
+hr {
+  color: white;
+  background-color: white;
+  border-color: white;
+  margin-bottom: 10px;
 }
 </style>
