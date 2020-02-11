@@ -1,58 +1,171 @@
 <template>
-  <div class="hello">
-    <h1>HOME</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+  <div>
+    <h1>Bienvenue au club de développement de jeux vidéo de l'Université Laval</h1>
+    <br />
+    <h4 style="text-align:justify;margin-right: 30px;margin-left:30px;">
+     Le club de développement de jeux vidéo de l'Université Laval a pour objectif  d'enrichir les connaissances en création de jeux vidéo
+     des étudiants de la faculté des sciences et génie. Pour ce faire, le club propose des formations,
+     des séances de travail et des conférences avec des professionnels de l'industrie. Ses membres sont encouragés à participer à des concours dans le but de réaliser des projets vidéoludiques.
+    </h4>
+<br />
+    <!--Carousel Wrapper-->
+    <div
+      id="carousel-project-images"
+      class="carousel slide carousel-fade"
+      data-ride="carousel"
+      data-interval="5000"
+    >
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-project-images" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-project-images" data-slide-to="1"></li>
+        <li data-target="#carousel-project-images" data-slide-to="2"></li>
+        <li data-target="#carousel-project-images" data-slide-to="3"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="view">
+            <img src="logo_cdjvul.png" alt="Club de développement de jeux vidéo" />
+            <div class="mask rgba-black-light"></div>
+          </div>
+          <div class="carousel-caption">
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img src="lanceleau.jpg" alt="Les Aventures de Lanceleau" />
+            <div class="mask rgba-black-strong"></div>
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img src="test.jpg" alt="Third slide" />
+            <div class="mask rgba-black-slight"></div>
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img src="logo.png" alt="Fourth slide" />
+            <div class="mask rgba-black-slight"></div>
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+      <!--/.Slides-->
+
+      <!--Controls-->
+      <a
+        class="carousel-control-prev"
+        href="#carousel-project-images"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carousel-project-images"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <div class="card-deck">
+      <div class="card bg-dark">
+        <div class="card-body text-center">
+          <h3 class="card-text">Restez à jour sur les événements</h3>
+          <div>
+            <div><a href="https://www.facebook.com/gamedevUlaval/" target="_blank" class="nav-link">Facebook</a></div>
+            <div><a href="https://cfi-ul.slack.com/" target="_blank" class="nav-link">Slack</a></div>
+            <div><a href="https://discord.gg/3WgpkMY" target="_blank" class="nav-link">Discord</a></div>
+          </div>
+          <!-- <button>Inscrivez-vous à notre mailing liste</button> -->
+        </div>
+      </div>
+      <div class="card bg-dark">
+        <div class="card-body text-center">
+          <h3 class="card-text">Responsable du club</h3>
+          <img
+            class="spotlight"
+            alt="Image introuvable"
+            src="https://scontent.fyhu2-1.fna.fbcdn.net/v/t31.0-8/p960x960/22550485_10210380328456967_3156504259055299734_o.jpg?_nc_cat=110&amp;_nc_ohc=ygF5RcqCYaMAX-vo9Y5&amp;_nc_ht=scontent.fyhu2-1.fna&amp;_nc_tp=1002&amp;oh=eb3420b07da9d83d39a0e4afafd8721a&amp;oe=5E9D523A"
+          />
+          <p>Antoine Olivier</p>
+          <p>Étudiant au BAC en Informatique</p>
+        </div>
+      </div>
+      <div class="card bg-dark">
+        <div class="card-body text-center">
+          <h3 class="card-text">Où nous trouver?</h3>
+          <p>1065 avenue de la Médecine, Québec, Canada</p>
+          <p>Pavillon Adrien-Pouliot</p>
+          <p>Local PLT-3778</p>
+          <br />
+          <br />
+          <h3>Heures d'ouverture du local</h3>
+          <p>Mardi de 13h00 à 17h00</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: "Home",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.card {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.spotlight {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 250px;
+  object-fit: contain;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+p {
+  margin: 0;
 }
-a {
-  color: #42b983;
+
+.carousel {
+  padding-bottom: 15px;
+}
+
+.carousel .carousel-item img {
+  min-height: 500px;
+  max-height: 500px;
+  min-width: auto;
 }
 </style>
