@@ -93,9 +93,11 @@
         <div class="card-body text-center">
           <h3 class="card-text">Restez à jour sur les événements</h3>
           <div>
-            <div><a href="https://www.facebook.com/gamedevUlaval/" target="_blank" class="nav-link">Facebook</a></div>
-            <div><a href="https://cfi-ul.slack.com/" target="_blank" class="nav-link">Slack</a></div>
-            <div><a href="https://discord.gg/3WgpkMY" target="_blank" class="nav-link">Discord</a></div>
+            <div><img src="Facebook.svg.png" class="icons-link"/><a href="https://www.facebook.com/gamedevUlaval/" target="_blank" class="icon-box">Facebook</a></div>
+            <br/>
+            <div><img src="slack.png" class="icons-link"/><a href="https://cfi-ul.slack.com/" target="_blank" class="icon-box">Slack</a></div>
+            <br/>
+            <div><img src="discord.jpg" class="icons-link"/><a href="https://discord.gg/3WgpkMY" target="_blank" class="icon-box">Discord</a></div>
           </div>
           <!-- <button>Inscrivez-vous à notre mailing liste</button> -->
         </div>
@@ -153,6 +155,18 @@ export default {
   width: 100%;
   max-width: 250px;
   object-fit: contain;
+}
+.icons-link {
+  width: 100%;
+  max-width: 100px;
+  object-fit: contain;
+  display:inline-block;
+}
+
+.icon-box {
+  width: 50%;
+  display:inline-block;
+  color:white;
 }
 
 p {
