@@ -21,7 +21,7 @@ export const projets = [{
         title: "T.R.A.P",
         event: "Concours Ubisoft 2018",
         description: "Le but du jeu: éviter de se faire capturer! Servez-vous, dans ce jeu de style puzzle, des objets de la scène pour vous aider à traverser les ennemis sans être repéré.",
-        participants: [],
+        participants: ["Florentin, ", "Nicolas, ", "Louis, ", "Maxime, " , "Marc-André, " , "Phillipe, ", "William"],
         imagePath: "trap.png"
     }, {
         title: "Club Manchot (en cours de développement)",
