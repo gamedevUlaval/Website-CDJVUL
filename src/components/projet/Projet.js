@@ -3,7 +3,7 @@ export const projets = [{
         event: "Concours Ubisoft 2019",
         description: "The Adventures of Lanceleau est un jeu solo de survie. Le but du jeu est simple: éteindre les feux sur scène et survivre aux vagues d'ennemis. Le seul hic, la foule peut vous nuire ou vous aider! Grâce a une application mobile, vos ami.e.s peuvent changer le cours de votre partie en vous envoyant plus d'ennemis ou des leurres! Allez-vous réussir à finir les trois actes de votre pièce de théâtre?",
         participants: ["Antoine Olivier, ", "Antoine Morel, ", "Anthony Blanchette-Potvin, ", "Bernard Lambert, ", "Guillaume Gingras, ", "Hugo Siqueira Gomes, ", "Marie Gallerand, ", "Noémie Caron"],
-        imagePath: "lanceleau.jpg"
+        imagePath: "theAdventuresOfLanceleau1920x1200px.png"
     }, {
         title: "The Running Dead",
         event: "Concours Ubisoft 2019",

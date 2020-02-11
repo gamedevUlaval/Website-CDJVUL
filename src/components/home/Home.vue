@@ -1,5 +1,6 @@
 <template>
   <div>
+    <br>
     <h1>Bienvenue au club de développement de jeux vidéo de l'Université Laval</h1>
     <br />
     <h4 style="text-align:justify;margin-right: 30px;margin-left:30px;">
@@ -21,6 +22,7 @@
         <li data-target="#carousel-project-images" data-slide-to="1"></li>
         <li data-target="#carousel-project-images" data-slide-to="2"></li>
         <li data-target="#carousel-project-images" data-slide-to="3"></li>
+        <li data-target="#carousel-project-images" data-slide-to="4"></li>
       </ol>
       <!--/.Indicators-->
 
@@ -32,13 +34,12 @@
             <div class="mask rgba-black-light"></div>
           </div>
           <div class="carousel-caption">
-
           </div>
         </div>
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img src="lanceleau.jpg" alt="Les Aventures de Lanceleau" />
+            <img src="runningDead.jpg" alt="The Running Dead" />
             <div class="mask rgba-black-strong"></div>
           </div>
           <div class="carousel-caption">
@@ -47,7 +48,7 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img src="test.jpg" alt="Third slide" />
+            <img src="theAdventuresOfLanceleau1920x1200px.png" alt="Les Aventures de Lanceleau" />
             <div class="mask rgba-black-slight"></div>
           </div>
           <div class="carousel-caption">
@@ -56,7 +57,16 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img src="logo.png" alt="Fourth slide" />
+            <img src="mail.png" alt="You Lost Mail!" />
+            <div class="mask rgba-black-slight"></div>
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img src="trap.png" alt="Trap" />
             <div class="mask rgba-black-slight"></div>
           </div>
           <div class="carousel-caption">
@@ -87,17 +97,24 @@
       <!--/.Controls-->
     </div>
     <!--/.Carousel Wrapper-->
-
+    <br>
+    <br>
     <div class="card-deck">
       <div class="card bg-dark">
         <div class="card-body text-center">
           <h3 class="card-text">Restez à jour sur les événements</h3>
           <div>
+            <a href="https://www.facebook.com/gamedevUlaval/" target="_blank">
             <div><img src="Facebook.svg.png" class="icons-link"/><a href="https://www.facebook.com/gamedevUlaval/" target="_blank" class="icon-box">Facebook</a></div>
+            </a>
             <br/>
+            <a href="https://www.facebook.com/gamedevUlaval/" target="_blank">
             <div><img src="slack.png" class="icons-link"/><a href="https://cfi-ul.slack.com/" target="_blank" class="icon-box">Slack</a></div>
+            </a>
             <br/>
+            <a href="https://www.facebook.com/gamedevUlaval/" target="_blank">
             <div><img src="discord.jpg" class="icons-link"/><a href="https://discord.gg/3WgpkMY" target="_blank" class="icon-box">Discord</a></div>
+            </a>
           </div>
           <!-- <button>Inscrivez-vous à notre mailing liste</button> -->
         </div>
@@ -124,6 +141,10 @@
           <br />
           <h3>Heures d'ouverture du local</h3>
           <p>Mardi de 13h00 à 17h00</p>
+          <br />
+          <br />
+          <h3>Pour nous contacter</h3>
+          <p>gamedev.admin@ift.ulaval.ca</p>
         </div>
       </div>
     </div>
@@ -141,13 +162,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.card {
-  position: relative;
-  display: flex;
-  flex-flow: column;
-  text-align: center;
-  align-items: center;
-  width: 100%;
+.card-deck{
+  width: 100%
 }
 
 .spotlight {
