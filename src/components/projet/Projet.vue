@@ -2,7 +2,8 @@
   <div>
     <h1>Projets du club</h1>
     <div v-for="(projet,index) in projets" v-bind:key="index" class="row border-bottom border-top">
-      <div class="col-md-3"><img class=" img-fluid" v-bind:src="projet.imagePath" alt="image could not be displayed"></div>
+      <br/>
+      <div class="col-md-3"><img class="img-fluid" v-bind:src="projet.imagePath" alt="image could not be displayed"></div>
       <div class="project-description col-md-9">
         <h2>{{projet.title}}</h2>
         <h5>{{projet.description}}</h5>
@@ -15,6 +16,7 @@
           <span class="project-bold-text">Événement:</span>
           {{projet.event}}
         </div>
+        <br/>
       </div>
     </div>
     <br>
@@ -40,6 +42,7 @@ export default {
 .project-description {
   text-align: justify;
   padding-right: 45px;
+  width:100%;
 }
 
 .project-participants {
@@ -56,5 +59,10 @@ hr {
   background-color: white;
   border-color: white;
   margin-bottom: 10px;
+}
+.row{
+  width:100%;
+  margin: 0;
+  padding-left:15px;
 }
 </style>
