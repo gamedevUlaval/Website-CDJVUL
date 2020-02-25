@@ -204,8 +204,8 @@ p {
 }
 
 .carousel .carousel-item img {
-  /* min-height: 500px; */
+  min-height: 500px;
   max-height: 500px;
-  /* min-width: auto; */
+  min-width: auto;
 }
 </style>
