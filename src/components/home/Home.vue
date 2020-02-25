@@ -23,6 +23,7 @@
         <li data-target="#carousel-project-images" data-slide-to="2"></li>
         <li data-target="#carousel-project-images" data-slide-to="3"></li>
         <li data-target="#carousel-project-images" data-slide-to="4"></li>
+        <li data-target="#carousel-project-images" data-slide-to="5"></li>
       </ol>
       <!--/.Indicators-->
 
@@ -39,7 +40,7 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img src="runningDead.jpg" alt="The Running Dead" />
+            <img src="RunningDead_1920x1080.jpg" alt="The Running Dead" />
             <div class="mask rgba-black-strong"></div>
           </div>
           <div class="carousel-caption">
@@ -48,7 +49,7 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img src="theAdventuresOfLanceleau1920x1200px.png" alt="Les Aventures de Lanceleau" />
+            <img src="TheAdventuresOfLanceleau_1920x1200px.png" alt="Les Aventures de Lanceleau" />
             <div class="mask rgba-black-slight"></div>
           </div>
           <div class="carousel-caption">
@@ -57,7 +58,7 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img src="mail.png" alt="You Lost Mail!" />
+            <img src="Mail_592x488.png" alt="You Lost Mail!" />
             <div class="mask rgba-black-slight"></div>
           </div>
           <div class="carousel-caption">
@@ -66,7 +67,16 @@
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img src="trap.png" alt="Trap" />
+            <img src="WaterYouDoingLogo_1920x1200.png" alt="Water You Doing" />
+            <div class="mask rgba-black-slight"></div>
+          </div>
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <!--Mask color-->
+          <div class="view">
+            <img src="Trap_1142x848.png" alt="Trap" />
             <div class="mask rgba-black-slight"></div>
           </div>
           <div class="carousel-caption">
@@ -194,8 +204,8 @@ p {
 }
 
 .carousel .carousel-item img {
-  min-height: 500px;
+  /* min-height: 500px; */
   max-height: 500px;
-  min-width: auto;
+  /* min-width: auto; */
 }
 </style>
