@@ -135,7 +135,7 @@
           <img
             class="spotlight"
             alt="Image introuvable"
-            src="https://scontent.fyhu2-1.fna.fbcdn.net/v/t31.0-8/p960x960/22550485_10210380328456967_3156504259055299734_o.jpg?_nc_cat=110&amp;_nc_ohc=ygF5RcqCYaMAX-vo9Y5&amp;_nc_ht=scontent.fyhu2-1.fna&amp;_nc_tp=1002&amp;oh=eb3420b07da9d83d39a0e4afafd8721a&amp;oe=5E9D523A"
+            src="antoine_olivier.jpg"
           />
           <p>Antoine Olivier</p>
           <p>Étudiant au BAC en Informatique</p>
