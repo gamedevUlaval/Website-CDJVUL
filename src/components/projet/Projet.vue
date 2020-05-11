@@ -5,11 +5,11 @@
       <br/>
       <div class="col-md-3"><img class="img-fluid" v-bind:src="projet.imagePath" v-on:click="goToProject(index)" alt="image could not be displayed"></div>
       <div class="project-description col-md-9">
-        <h2> <a href="#" class="project-title" v-on:click="goToProject(index)">{{projet.title}}</a></h2>
+        <h2> <a href="javascript:;" class="project-title" v-on:click="goToProject(index)">{{projet.title}}</a></h2>
         <h5>{{projet.description}}</h5>
         <div v-if="projet.participants" class="project-participants">
           <span class="project-bold-text">Participants: </span>
-          <span v-for="participant in projet.participants" v-bind:key="participant">{{participant}}</span>
+          <span>{{projet.participants.join(", ")}}</span>
         </div>
         <br>
         <div v-if="projet.event" class="project-event">

@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <h3 class="project-title">Photos et art conceptuel</h3>
+    <h3 class="project-title">Images et art conceptuel</h3>
     <div class="container">
       <div class="card-columns">
         <div class="card">
