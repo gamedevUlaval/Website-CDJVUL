@@ -1,20 +1,20 @@
 <template>
   <div>
     <h1>Projets du club</h1>
-    <div v-for="(projet,index) in projets" v-bind:key="index" class="row border-bottom border-top">
+    <div v-for="(project,index) in projects" v-bind:key="index" class="row border-bottom border-top">
       <br/>
-      <div class="col-md-3"><img class="img-fluid" v-bind:src="projet.imagePath" v-on:click="goToProject(index)" alt="image could not be displayed"></div>
+      <div class="col-md-3"><img class="img-fluid" v-bind:src="require(`@/assets/projects/${project.mainImagePath}`)" v-on:click="goToProject(index)" alt="Image introuvable"></div>
       <div class="project-description col-md-9">
-        <h2> <a href="javascript:;" class="project-title" v-on:click="goToProject(index)">{{projet.title}}</a></h2>
-        <h5>{{projet.description}}</h5>
-        <div v-if="projet.participants" class="project-participants">
+        <h2> <a href="javascript:;" class="project-title" v-on:click="goToProject(index)">{{project.title}}</a></h2>
+        <h5>{{project.description}}</h5>
+        <div v-if="project.participants" class="project-participants">
           <span class="project-bold-text">Participants: </span>
-          <span>{{projet.participants.join(", ")}}</span>
+          <span>{{project.participants.join(", ")}}</span>
         </div>
         <br>
-        <div v-if="projet.event" class="project-event">
+        <div v-if="project.event" class="project-event">
           <span class="project-bold-text">Événement:</span>
-          {{projet.event}}
+          {{project.event}}
         </div>
         <br/>
       </div>
@@ -25,10 +25,11 @@
 
 <script>
 import * as projectInformation from "./Projet.js"
+
 export default {
   name: "Projet",
   data: () => ({
-    projets: []
+    projects: []
   }),
 
   methods: {
@@ -43,7 +44,7 @@ export default {
   },
 
   async created() {
-      this.projets = projectInformation.projets;
+      this.projects = projectInformation.projets;
   }
 };
 </script>

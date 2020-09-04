@@ -14,7 +14,8 @@ export const projets = [
             "Marie Gallerand",
             "Noémie Caron"
         ],
-        imagePath: "TheAdventuresOfLanceleau_1920x1200px.png"
+        mainImagePath: "lanceleau/TheAdventuresOfLanceleau_1920x1200.png",
+        imagesFolder: 'lanceleau'
     },
     {
         title: "The Running Dead",
@@ -31,7 +32,8 @@ export const projets = [
             "Pierre Compagnon",
             "Quentin Labbé"
         ],
-        imagePath: "RunningDead_1920x1080.jpg"
+        mainImagePath: "runningdead/RunningDead_1920x1080.png",
+        imagesFolder: "runningdead"
     },
     {
         title: "You've Got Mail!",
@@ -47,7 +49,8 @@ export const projets = [
             "Jimmy Dumont",
             "Marie Fallon"
         ],
-        imagePath: "Mail_592x488.png"
+        mainImagePath: "yougotmail/YouGotMail_592x488.png",
+        imagesFolder: "yougotmail"
     },
     {
         title: "Water You Doing",
@@ -64,7 +67,8 @@ export const projets = [
             "Gabriel Laroque",
             "Karole-Anne Bernier"
         ],
-        imagePath: "WaterYouDoingLogo_1920x1200.png"
+        mainImagePath: "wateryoudoing/WaterYouDoingLogo_1920x1200.png",
+        imagesFolder: "wateryoudoing"
     },
     {
         title: "T.R.A.P",
@@ -80,7 +84,8 @@ export const projets = [
             "Phillipe",
             "William"
         ],
-        imagePath: "Trap_1142x848.png"
+        mainImagePath: "trap/Trap_1142x848.png",
+        imagesFolder: "trap"
     },
     {
         title: "Club Manchot (en cours de développement)",
@@ -91,7 +96,8 @@ export const projets = [
             "Anthony Beaudoin",
             "Ariel Carignan"
         ],
-        imagePath: "Manchot_519x428.png"
+        mainImagePath: "clubmanchot/ClubManchot_519x428.png",
+        imagesFolder: "clubmanchot"
     }
     // {
     //     title: "Sew World",

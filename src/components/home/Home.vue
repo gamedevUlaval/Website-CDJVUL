@@ -30,7 +30,7 @@
         </div>
         <div class="carousel-item" v-for="(project,index) in projects" v-bind:key="index">
           <div class="view">            
-            <img v-bind:src="require(`@/assets/projects/${project.imagePath}`)" alt="Image introuvable" />
+            <img v-bind:src="require(`@/assets/projects/${project.mainImagePath}`)" alt="Image introuvable" />
           </div>
           <div class="carousel-caption"></div>
         </div>

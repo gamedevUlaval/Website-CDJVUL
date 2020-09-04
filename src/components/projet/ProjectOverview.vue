@@ -18,28 +18,12 @@
     <h3 class="project-title">Images et art conceptuel</h3>
     <div class="container">
       <div class="card-columns">
-        <div class="card">
+        <div class="card" v-for="(image,index) in projectImagesPaths" v-bind:key="index">
           <img
             class="card-img img-fluid"
-            v-bind:src="projectInfo.imagePath"
-            alt="Card image"
-            @click="showImageModal(projectInfo.imagePath)"
-          />
-        </div>
-        <div class="card">
-          <img
-            class="card-img img-fluid"
-            v-bind:src="projectInfo.imagePath"
-            alt="Card image"
-            @click="showImageModal(projectInfo.imagePath)"
-          />
-        </div>
-        <div class="card">
-          <img
-            class="card-img img-fluid"
-            v-bind:src="projectInfo.imagePath"
-            alt="Card image"
-            @click="showImageModal(projectInfo.imagePath)"
+            v-bind:src="image"
+            alt="Image introuvable"
+            @click="showImageModal(image)"
           />
         </div>
       </div>
@@ -48,12 +32,9 @@
     <h3>Participants</h3>
     <div class="container">
       <div class="list-group d-flex flex-row flex-wrap">
-        <div
-          class="w-50"
-          v-for="participant in projectInfo.participants"
-          v-bind:key="participant"
-        >{{participant}}</div>
-        <!-- <li v-for="participant in projectInfo.participants" v-bind:key="participant">{{participant}}</li> -->
+        <div class="w-50" v-for="participant in projectInfo.participants" v-bind:key="participant">
+          {{participant}}
+        </div>
       </div>
     </div>
 
@@ -76,7 +57,8 @@ export default {
   data: () => ({
     projectInfo: undefined,
     showModal: false,
-    currentImage: undefined
+    currentImage: undefined,
+    projectImagesPaths: []
   }),
 
   methods: {
@@ -84,14 +66,22 @@ export default {
       this.currentImage = selectedImage;
       this.showModal = true;
     },
+
     hideImageModal: function() {
       this.showModal = false;
       this.currentImage = undefined;
     }
-  },
+  },  
 
   async created() {
-    this.projectInfo = projectsInformation.projets[this.projectIndex];
+    this.projectInfo = projectsInformation.projets[this.projectIndex];    
+
+    const files = require.context(`@/assets/projects`, true, /\.(png|jpg)$/);
+    files.keys().forEach(key => {
+      if (key.startsWith(`./${this.projectInfo.imagesFolder}`)) {
+        this.projectImagesPaths.push(files(key));
+      }      
+    });
   }
 };
 </script>
