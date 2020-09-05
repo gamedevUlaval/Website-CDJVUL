@@ -3,7 +3,9 @@
     <h1>Projets du club</h1>
     <div v-for="(project,index) in projects" v-bind:key="index" class="row border-bottom border-top">
       <br/>
-      <div class="col-md-3"><img class="img-fluid" v-bind:src="require(`@/assets/projects/${project.mainImagePath}`)" v-on:click="goToProject(index)" alt="Image introuvable"></div>
+      <div class="col-md-3">
+        <img class="img-fluid" v-bind:src="require(`@/assets/projects/${project.mainImagePath}`)" v-on:click="goToProject(index)" alt="Image introuvable">
+      </div>
       <div class="project-description col-md-9">
         <h2> <a href="javascript:;" class="project-title" v-on:click="goToProject(index)">{{project.title}}</a></h2>
         <h5>{{project.description}}</h5>

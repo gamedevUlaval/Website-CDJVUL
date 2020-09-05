@@ -4,12 +4,17 @@
     <h3>{{this.projectInfo.event}}</h3>
     <h4 class="project-description">{{this.projectInfo.description}}</h4>
 
-    <div class="video-wrapper">
-      <div class="video-container">
+    <div class="preview-wrapper">
+      <div class="embed-responsive embed-responsive-16by9">
+        <img 
+          v-if="this.projectInfo.gameplayTrailer == undefined" 
+          class="embed-responsive-item" 
+          v-bind:src="require(`@/assets/projects/${this.projectInfo.mainImagePath}`)" 
+          alt="Image introuvable">       
         <iframe
-          class="responsive-iframe"
-          src="https://www.youtube.com/embed/tgbNymZ7vqY"
-          frameborder="0"
+          v-else        
+          class="embed-responsive-item"
+          v-bind:src="this.projectInfo.gameplayTrailer"
           allowfullscreen
         ></iframe>
       </div>
@@ -97,26 +102,12 @@ export default {
   text-align: justify;
   padding: 2rem;
 }
-.video-wrapper {
+.preview-wrapper {
   display: inline-block;
   width: 100%;
   height: 100%;
   max-width: 1000px;
   max-height: 400px;
-}
-.video-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-}
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
 }
 .container {
   padding: 1rem;

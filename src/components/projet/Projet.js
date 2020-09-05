@@ -15,7 +15,8 @@ export const projets = [
             "Noémie Caron"
         ],
         mainImagePath: "lanceleau/TheAdventuresOfLanceleau_1920x1200.png",
-        imagesFolder: 'lanceleau'
+        imagesFolder: 'lanceleau',
+        gameplayTrailer: 'https://www.youtube.com/embed/9s0_aXsQjgY'
     },
     {
         title: "The Running Dead",
@@ -33,7 +34,8 @@ export const projets = [
             "Quentin Labbé"
         ],
         mainImagePath: "runningdead/RunningDead_1920x1080.png",
-        imagesFolder: "runningdead"
+        imagesFolder: "runningdead",
+        gameplayTrailer: 'https://www.youtube.com/embed/rR_Dg2yAHUM'
     },
     {
         title: "You've Got Mail!",
@@ -68,7 +70,9 @@ export const projets = [
             "Karole-Anne Bernier"
         ],
         mainImagePath: "wateryoudoing/WaterYouDoingLogo_1920x1200.png",
-        imagesFolder: "wateryoudoing"
+        imagesFolder: "wateryoudoing",
+        gameplayTrailer: 'https://www.youtube.com/embed/21q5pgeC_iM'
+        
     },
     {
         title: "T.R.A.P",
@@ -85,7 +89,8 @@ export const projets = [
             "William"
         ],
         mainImagePath: "trap/Trap_1142x848.png",
-        imagesFolder: "trap"
+        imagesFolder: "trap",
+        gameplayTrailer: 'https://www.youtube.com/embed/alKR4yRsPXM'
     },
     {
         title: "Club Manchot (en cours de développement)",
