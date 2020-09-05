@@ -1,4 +1,4 @@
-export const projets = [
+export const projects = [
     {
         title: "The Adventures of Lanceleau",
         event: "Concours Ubisoft 2019 (Thème: Le Spectacle)",

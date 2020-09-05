@@ -115,7 +115,7 @@
 </template>
 
 <script>
-import * as projectsInformation from "../projet/Projet.js";
+import * as projectsDataFile from "../projects/Projects.js";
 
 export default {
   name: "Home",
@@ -124,7 +124,7 @@ export default {
   }),
 
   async created() {
-    this.projects = projectsInformation.projets;
+    this.projects = projectsDataFile.projects;
   },
 };
 </script>

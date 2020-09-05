@@ -26,10 +26,10 @@
 </template>
 
 <script>
-import * as projectInformation from "./Projet.js"
+import * as projectsDataFile from "./Projects.js"
 
 export default {
-  name: "Projet",
+  name: "Projects",
   data: () => ({
     projects: []
   }),
@@ -46,7 +46,7 @@ export default {
   },
 
   async created() {
-      this.projects = projectInformation.projets;
+      this.projects = projectsDataFile.projects;
   }
 };
 </script>

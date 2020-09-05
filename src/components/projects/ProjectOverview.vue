@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import * as projectsInformation from "./Projet.js";
+import * as projectsDataFile from "./Projects.js";
 
 export default {
   name: "ProjectOverview",
@@ -79,7 +79,7 @@ export default {
   },  
 
   async created() {
-    this.projectInfo = projectsInformation.projets[this.projectIndex];    
+    this.projectInfo = projectsDataFile.projects[this.projectIndex];    
 
     const files = require.context(`@/assets/projects`, true, /\.(png|jpg)$/);
     files.keys().forEach(key => {
