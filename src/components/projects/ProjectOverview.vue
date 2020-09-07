@@ -47,7 +47,7 @@
     <div v-if="showModal">
       <div class="modal">
         <span class="close" v-on:click="hideImageModal()">&times;</span>
-        <img class="modal-content img-fluid" v-bind:src="currentImage" alt="Zoomed image" />
+        <img class="modal-content img-fluid" v-bind:src="currentImage" alt="Image introuvable" />
       </div>
     </div>
   </div>
@@ -68,11 +68,13 @@ export default {
 
   methods: {
     showImageModal: function(selectedImage) {
+      document.body.style.overflow = "hidden";
       this.currentImage = selectedImage;
       this.showModal = true;
     },
 
     hideImageModal: function() {
+      document.body.style.overflow = "auto";
       this.showModal = false;
       this.currentImage = undefined;
     }
@@ -117,6 +119,11 @@ export default {
   cursor: pointer;
   transition: 0.3s;
 }
+.card-img {
+  max-height: 400px;
+  object-fit: contain;
+  background-color: black;
+}
 .card-img:hover {
   opacity: 0.7;
 }
@@ -137,9 +144,11 @@ export default {
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
   animation-name: zoom;
   animation-duration: 0.6s;
+}
+.modal-open {
+  overflow: hidden;
 }
 @keyframes zoom {
   from {
