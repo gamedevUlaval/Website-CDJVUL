@@ -132,7 +132,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .card-deck {
-  width: 100%;
+    padding: 2rem;
 }
 
 .spotlight {
