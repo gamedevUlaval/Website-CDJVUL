@@ -15,7 +15,8 @@ export const projects = [
             "Philippe Reny-Côté"
         ],
         mainImagePath: "enracine/EnracineScreenshot1_996x703.png",
-        imagesFolder: 'enracine'
+        imagesFolder: "enracine",
+        gameplayTrailer: "https://www.youtube.com/embed/7o_XgrelCYU"
     },
     {
         title: "Mom's Out",
@@ -33,7 +34,7 @@ export const projects = [
             "Maxence Fourrier"
         ],
         mainImagePath: "momsout/MomsOutConceptArt1_2400x1350.png",
-        imagesFolder: 'momsout'
+        imagesFolder: "momsout"
     },
     {
         title: "The Adventures of Lanceleau",
@@ -51,8 +52,8 @@ export const projects = [
             "Noémie Caron"
         ],
         mainImagePath: "lanceleau/TheAdventuresOfLanceleau_1920x1200.png",
-        imagesFolder: 'lanceleau',
-        gameplayTrailer: 'https://www.youtube.com/embed/9s0_aXsQjgY'
+        imagesFolder: "lanceleau",
+        gameplayTrailer: "https://www.youtube.com/embed/9s0_aXsQjgY"
     },
     {
         title: "The Running Dead",
@@ -71,10 +72,10 @@ export const projects = [
         ],
         mainImagePath: "runningdead/RunningDead_1920x1080.png",
         imagesFolder: "runningdead",
-        gameplayTrailer: 'https://www.youtube.com/embed/rR_Dg2yAHUM'
+        gameplayTrailer: "https://www.youtube.com/embed/rR_Dg2yAHUM"
     },
     {
-        title: "You've Got Mail!",
+        title: "You've Lost Mail!",
         event: "Pixel Challenge 2018 (Thème: La Tempête Parfaite)",
         description:
             'Livrer le courrier pendant la guerre n\'est pas un travail pour tous! Dans cet "AutoScroller", bravez la tempête à bord de votre aéronef en évitant les obstacles et, surtout, évitez de perdre les précieuses lettres que vous transportez.',
@@ -87,8 +88,9 @@ export const projects = [
             "Jimmy Dumont",
             "Marie Fallon"
         ],
-        mainImagePath: "yougotmail/YouGotMail_592x488.png",
-        imagesFolder: "yougotmail"
+        mainImagePath: "youlostmail/YouLostMail_1920x1080.png",
+        imagesFolder: "youlostmail",
+        gameplayTrailer: "https://www.youtube.com/embed/pS3dUZMLJF0"
     },
     {
         title: "Water You Doing",
@@ -107,7 +109,7 @@ export const projects = [
         ],
         mainImagePath: "wateryoudoing/WaterYouDoingLogo_1920x1200.png",
         imagesFolder: "wateryoudoing",
-        gameplayTrailer: 'https://www.youtube.com/embed/21q5pgeC_iM'
+        gameplayTrailer: "https://www.youtube.com/embed/21q5pgeC_iM"
         
     },
     {
@@ -126,7 +128,7 @@ export const projects = [
         ],
         mainImagePath: "trap/Trap_1142x848.png",
         imagesFolder: "trap",
-        gameplayTrailer: 'https://www.youtube.com/embed/alKR4yRsPXM'
+        gameplayTrailer: "https://www.youtube.com/embed/alKR4yRsPXM"
     },
     {
         title: "Club Manchot (en cours de développement)",
