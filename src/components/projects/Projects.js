@@ -1,5 +1,41 @@
 export const projects = [
     {
+        title: "Enraciné",
+        event: "Concours Ubisoft 2020 (Thème: Génération)",
+        description:
+            "Enraciné est un jeu coopératif de puzzle et d’aventure. Dans celui-ci, un garçon est propulsé dans un monde mystérieux où il doit trouver un moyen résoudre les puzzles à l’aide d’une créature au pouvoir de télékinésie. Le hic : la créature est envoyée dans un univers parallèle et les deux ne peuvent se voir que par leur trace de pas ou leur aura. À deux, ceux-ci devront utiliser leurs habiletés respectives pour se retrouver et sortir de ce monde.",
+        participants: [
+            "Jonas Albiges",
+            "William Beaulieu",
+            "Jean-Philippe Bélanger",
+            "Vincent Chavanel-Jobin",
+            "Nicolas Landry-Truchon",
+            "Alexandre Moreau",
+            "Sarah Pelletier",
+            "Philippe Reny-Côté"
+        ],
+        mainImagePath: "enracine/EnracineScreenshot1_996x703.png",
+        imagesFolder: 'enracine'
+    },
+    {
+        title: "Mom's Out",
+        event: "Concours Ubisoft 2020 (Thème: Génération)",
+        description:
+            "Lorsque maman n'est pas là, papa et bébé doivent trouver des façons de s'occuper. Heureusement, la maison a été construite comme si c'était un jeu vidéo! Réussiront-ils à atteindre les clés qui dévoilent un aperçu de leurs prochaines générations?",
+        participants: [
+            "Louis-Philippe Séguin",
+            "Alexandre Morin",
+            "Jade Tam",
+            "Olivier Santerre",
+            "Christophe Bolduc",
+            "Paul-Louis Renard",
+            "Vincent Boulet",
+            "Maxence Fourrier"
+        ],
+        mainImagePath: "momsout/MomsOutConceptArt1_2400x1350.png",
+        imagesFolder: 'momsout'
+    },
+    {
         title: "The Adventures of Lanceleau",
         event: "Concours Ubisoft 2019 (Thème: Le Spectacle)",
         description:
