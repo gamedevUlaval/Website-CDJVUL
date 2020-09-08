@@ -24,7 +24,7 @@
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <div class="view">
-            <img src="home/logo_cdjvul.png" alt="Image introuvable" />
+            <img v-bind:src="require('@/assets/home/logo_cdjvul.png')" alt="Image introuvable" />
           </div>
           <div class="carousel-caption"></div>
         </div>
@@ -61,21 +61,21 @@
           <div>
             <a href="https://www.facebook.com/gamedevUlaval/" target="_blank">
               <div>
-                <img src="home/Facebook.svg.png" class="icons-link" />
+                <img v-bind:src="require('@/assets/home/Facebook.svg.png')" class="icons-link" />
                 <a href="https://www.facebook.com/gamedevUlaval/" target="_blank" class="icon-box">Facebook</a>
               </div>
             </a>
             <br />
             <a href="https://cfi-ul.slack.com/" target="_blank">
               <div>
-                <img src="home/slack.png" class="icons-link" />
+                <img v-bind:src="require('@/assets/home/slack.png')" class="icons-link" />
                 <a href="https://cfi-ul.slack.com/" target="_blank" class="icon-box">Slack</a>
               </div>
             </a>
             <br />
             <a href="https://discord.gg/3WgpkMY" target="_blank">
               <div>
-                <img src="home/discord.jpg" class="icons-link" />
+                <img v-bind:src="require('@/assets/home/discord.jpg')" class="icons-link" />
                 <a href="https://discord.gg/3WgpkMY" target="_blank" class="icon-box">Discord</a>
               </div>
             </a>
@@ -86,7 +86,7 @@
         <div class="card-body text-center">
           <h3 class="card-text">Responsable du club</h3>
           <br />
-          <img class="spotlight" alt="Image introuvable" src="home/ariel_carignan.jpg" />
+          <img class="spotlight" alt="Image introuvable" v-bind:src="require('@/assets/home/ariel_carignan.jpg')" />
           <br />
           <br />
           <p>Ariel Carigan</p>
