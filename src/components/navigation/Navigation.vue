@@ -13,7 +13,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <ul class="navbar-nav collapse navbar-collapse mr-auto mt-lg-0" id="navbarNavAltMarkup">
-      <li><img src="navigation/logoUL_250x104.png" class="navbar-img"></li>
+      <li><img v-bind:src="require('@/assets/navigation/logoUL_250x104.png')" class="navbar-img"></li>
       <li>
         <router-link class="nav-link left-align" to="/">Club de Développement de Jeux Vidéo de l'UL</router-link>
       </li>
