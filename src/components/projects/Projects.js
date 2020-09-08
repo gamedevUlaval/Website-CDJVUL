@@ -1,5 +1,19 @@
 export const projects = [
     {
+        title: "Lighthouse Siege",
+        event: "Weekly Game Jam Week 143 (Thème: L'eau courante)",
+        description:
+            "Des pirates sont en train de descendre la rivière pour attaquer votre phare. Serez-vous capable de survivre et en détruisant les vagues de bateaux avant qu'ils s'y rendent?",
+        participants: [
+            "Antoine Olivier",
+            "Noémie Caron",
+            "Bernard Lambert",
+            "Monique Lambert"
+        ],
+        mainImagePath: "lighthousesiege/LighthouseSiege_1920x1080.png",
+        imagesFolder: "lighthousesiege"
+    },
+    {
         title: "Enraciné",
         event: "Concours Ubisoft 2020 (Thème: Génération)",
         description:
@@ -34,7 +48,8 @@ export const projects = [
             "Maxence Fourrier"
         ],
         mainImagePath: "momsout/MomsOutConceptArt1_2400x1350.png",
-        imagesFolder: "momsout"
+        imagesFolder: "momsout",
+        gameplayTrailer: "https://www.youtube.com/embed/uIRdeQ5X_Wo"
     },
     {
         title: "The Adventures of Lanceleau",
