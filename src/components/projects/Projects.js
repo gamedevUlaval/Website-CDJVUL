@@ -11,7 +11,8 @@ export const projects = [
             "Monique Lambert"
         ],
         mainImagePath: "lighthousesiege/LighthouseSiege_1920x1080.png",
-        imagesFolder: "lighthousesiege"
+        imagesFolder: "lighthousesiege",
+        gameplayTrailer: "https://www.youtube.com/embed/KlSZ7rE5SiA"
     },
     {
         title: "Enraciné",
