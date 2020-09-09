@@ -84,7 +84,7 @@ img:hover {
   color:white;
 }
 .project-description {
-  text-align: justify;
+  text-align: left;
 }
 .project-participants {
   text-align: left;
