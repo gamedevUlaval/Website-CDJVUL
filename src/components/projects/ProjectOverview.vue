@@ -101,7 +101,7 @@ export default {
 .project-description {
   display: inline-block;
   max-width: 1200px;
-  text-align: justify;
+  text-align: left;
   padding: 2rem;
 }
 .preview-wrapper {
