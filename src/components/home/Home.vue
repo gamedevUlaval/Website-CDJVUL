@@ -102,8 +102,9 @@
           <br />
           <br />
           <h3>Heures d'ouverture du local</h3>
-          <p>Non disponible pour le moment étant donné</p>
-          <p>que la plupart des cours sont à distance</p>
+          <p>Lundi de 10h30 à 11h30</p>
+          <p>Mardi de 9h30 à 11h30</p>
+          <p>Jeudi de 15h00 à 17h00</p>
           <br />
           <br />
           <h3>Pour nous contacter</h3>
