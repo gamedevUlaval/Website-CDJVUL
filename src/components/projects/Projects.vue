@@ -8,7 +8,7 @@
         <div class="col-12 col-lg-4 col-xl-3 p-2">
           <div class="w-100 h-100 d-flex justify-content-center align-items-center">
             <div class="embed-responsive embed-responsive-16by9">
-              <img class="embed-responsive-item" v-bind:src="require(`@/assets/projects/${project.mainImagePath}`)" alt="Image introuvable">
+              <img class="embed-responsive-item" v-bind:src="require(`@/assets/projects/${project.mainImagePath}`)" v-on:click="goToProject(index)" alt="Image introuvable">
             </div>
           </div>
         </div>
