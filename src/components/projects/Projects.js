@@ -1,9 +1,47 @@
 export const projects = [
     {
+        title: "Crisis at R.W.P. Inc.",
+        event: "Concours Ubisoft 2021 (Thème: Séparé.es // Ensemble)",
+        description:
+            "Crisis at R.W.P. Inc. est un jeu de puzzle coop où vous pouvez jouer le rôle d'un gardien de sécurité à l'intérieur de l'usine ou d'un technicien qui voit seulement ce qui se passes à travers les caméras de sécurité. Communiquer et coopérer pour tenter de garder l'usine opérationnelle. Ce jeu a remporté le prix pour Meilleures créativité et intégration du thème au Concours Ubisoft 2021. Allez le télécharger sur itch.io pour l'essayer: https://freshtoucan.itch.io/crisis-at-rwp-inc",
+        participants: [
+            "Mathieu Bédard",
+            "Claire Bouttes",
+            "Gabriel Bouchard",
+            "Simon Robidas",
+            "Alexis St-Amand",
+            "Louis-Philippe Séguin",
+            "Adrien Fournier-Mckoy",
+            "Samuel Martel"
+        ],
+        mainImagePath: "crisisatrwpinc/CrisisAtRWPIncArt1_1920x1080.png",
+        imagesFolder: "crisisatrwpinc",
+        gameplayTrailer: "https://www.youtube.com/embed/c-q6Ec3AaJs"
+    },
+    {
+        title: "No Cake In The Abyss",
+        event: "Concours Ubisoft 2021 (Thème: Séparé.es // Ensemble)",
+        description:
+            "No Cake In The Abyss est un jeu de puzzle coop où vous devez communiquer par différents moyens et coopérer pour naviguer à travers l'usine d'AbyssCorp pour atteindre le gâteau. Allez le télécharger sur itch.io pour l'essayer: https://abyssteam.itch.io/no-cake-in-the-abyss",
+        participants: [
+            "Sarah Pelletier",
+            "Jérôme Collin",
+            "Cédric Lafond-Mercier",
+            "Jérémie Jullien",
+            "Anthony Beaudoin",
+            "Élie Bédard",
+            "Samuel Speichert",
+            "Diego Cabas-Munster"
+        ],
+        mainImagePath: "nocakeintheabyss/NoCakeInTheAbyssArt1_1920x1080.jpg",
+        imagesFolder: "nocakeintheabyss",
+        gameplayTrailer: "https://www.youtube.com/embed/DFYvCSP_PZo"
+    },
+    {
         title: "Lighthouse Siege",
         event: "Weekly Game Jam Week 143 (Thème: L'eau courante)",
         description:
-            "Des pirates sont en train de descendre la rivière pour attaquer votre phare. Serez-vous capable de survivre et en détruisant les vagues de bateaux avant qu'ils s'y rendent?",
+            "Des pirates sont en train de descendre la rivière pour attaquer votre phare. Serez-vous capable de survivre et en détruisant les vagues de bateaux avant qu'ils s'y rendent? Allez le télécharger sur itch.io pour l'essayer: https://neva-stuica.itch.io/lighthouse-siege",
         participants: [
             "Antoine Olivier",
             "Noémie Caron",
@@ -126,7 +164,6 @@ export const projects = [
         mainImagePath: "wateryoudoing/WaterYouDoingLogo_1920x1200.png",
         imagesFolder: "wateryoudoing",
         gameplayTrailer: "https://www.youtube.com/embed/21q5pgeC_iM"
-        
     },
     {
         title: "T.R.A.P",
@@ -134,30 +171,30 @@ export const projects = [
         description:
             "Le but du jeu: éviter de se faire capturer! Servez-vous, dans ce jeu de style puzzle, des objets de la scène pour vous aider à traverser les ennemis sans être repéré.",
         participants: [
-            "Florentin",
-            "Nicolas",
-            "Louis",
-            "Maxime",
-            "Marc-André",
-            "Phillipe",
-            "William"
+            "Florentin Macé",
+            "Nicolas Paul-Bonneau",
+            "Louis Rochon",
+            "Maxime Fortin",
+            "Marc-André Brunelle-Langevin",
+            "Phillipe Toutant",
+            "William Beaulieu"
         ],
         mainImagePath: "trap/Trap_1142x848.png",
         imagesFolder: "trap",
         gameplayTrailer: "https://www.youtube.com/embed/alKR4yRsPXM"
     },
-    {
-        title: "Club Manchot (en cours de développement)",
-        description:
-            "Les humains tentent de polluer la planète à coup de verres de cafés et de \"shakes\" de protéines! Votre mission en tant que manchot: survivre et empêcher tous les individus d'atteindre les salles d'entraînements et les cafés.",
-        participants: [
-            "Antoine Olivier",
-            "Anthony Beaudoin",
-            "Ariel Carignan"
-        ],
-        mainImagePath: "clubmanchot/ClubManchot_519x428.png",
-        imagesFolder: "clubmanchot"
-    }
+    // {
+    //     title: "Club Manchot (en cours de développement)",
+    //     description:
+    //         "Les humains tentent de polluer la planète à coup de verres de cafés et de \"shakes\" de protéines! Votre mission en tant que manchot: survivre et empêcher tous les individus d'atteindre les salles d'entraînements et les cafés.",
+    //     participants: [
+    //         "Antoine Olivier",
+    //         "Anthony Beaudoin",
+    //         "Ariel Carignan"
+    //     ],
+    //     mainImagePath: "clubmanchot/ClubManchot_519x428.png",
+    //     imagesFolder: "clubmanchot"
+    // }
     // {
     //     title: "Sew World",
     //     event: "Concours Ubisoft 2016",
