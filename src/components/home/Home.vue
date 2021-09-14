@@ -73,12 +73,14 @@
               </div>
             </a>
             <br /> -->
-            <a href="https://discord.gg/3WgpkMY" target="_blank">
+            <a href="https://discord.gg/5Ca3QUXrk4" target="_blank">
               <div>
                 <img v-bind:src="require('@/assets/home/discord.jpg')" class="icons-link rounded-lg" />
-                <a href="https://discord.gg/3WgpkMY" target="_blank" class="icon-box">Discord</a>
+                <a href="https://discord.gg/5Ca3QUXrk4" target="_blank" class="icon-box">Discord</a>
               </div>
             </a>
+            <br />
+            <a style="font-size: 1.75rem" href="https://docs.google.com/forms/d/e/1FAIpQLSfM7rsdwywJ00xK1Kmowq59YvUX-SsID-as5uY6ghEOJ0o-TA/viewform?usp=pp_url">Inscrivez-vous officiellement au club ici!</a>
           </div>
         </div>
       </div>
