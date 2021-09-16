@@ -25,7 +25,7 @@
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
             <div class="embed-responsive embed-responsive-16by9">
-              <img class="embed-responsive-item" v-bind:src="require('@/assets/home/logo_cdjvul.png')" alt="Image introuvable" />
+              <img class="embed-responsive-item" v-bind:src="require('@/assets/home/logo_cdjvul_1920x1080.png')" alt="Image introuvable" />
             </div>
             <div class="carousel-caption"></div>
           </div>
@@ -58,26 +58,29 @@
         <div class="card-body text-center">
           <h3 class="card-text">Restez à jour sur les événements</h3>
           <div>
+            <br />
             <a href="https://www.facebook.com/gamedevUlaval/" target="_blank">
               <div>
-                <img v-bind:src="require('@/assets/home/Facebook.svg.png')" class="icons-link" />
+                <img v-bind:src="require('@/assets/home/Facebook.svg.png')" class="icons-link rounded-lg" />
                 <a href="https://www.facebook.com/gamedevUlaval/" target="_blank" class="icon-box">Facebook</a>
               </div>
             </a>
             <br />
-            <a href="https://cfi-ul.slack.com/" target="_blank">
+            <!-- <a href="https://cfi-ul.slack.com/" target="_blank">
               <div>
-                <img v-bind:src="require('@/assets/home/slack.png')" class="icons-link" />
+                <img v-bind:src="require('@/assets/home/slack-logo-icon.png')" class="icons-link rounded-lg bg-light" />
                 <a href="https://cfi-ul.slack.com/" target="_blank" class="icon-box">Slack</a>
               </div>
             </a>
-            <br />
-            <a href="https://discord.gg/3WgpkMY" target="_blank">
+            <br /> -->
+            <a href="https://discord.gg/5Ca3QUXrk4" target="_blank">
               <div>
-                <img v-bind:src="require('@/assets/home/discord.jpg')" class="icons-link" />
-                <a href="https://discord.gg/3WgpkMY" target="_blank" class="icon-box">Discord</a>
+                <img v-bind:src="require('@/assets/home/discord.jpg')" class="icons-link rounded-lg" />
+                <a href="https://discord.gg/5Ca3QUXrk4" target="_blank" class="icon-box">Discord</a>
               </div>
             </a>
+            <br />
+            <a style="font-size: 1.75rem" href="https://docs.google.com/forms/d/e/1FAIpQLSfM7rsdwywJ00xK1Kmowq59YvUX-SsID-as5uY6ghEOJ0o-TA/viewform?usp=pp_url">Inscrivez-vous officiellement au club ici!</a>
           </div>
         </div>
       </div>
@@ -85,11 +88,11 @@
         <div class="card-body text-center">
           <h3 class="card-text">Responsable du club</h3>
           <br />
-          <img class="spotlight" alt="Image introuvable" v-bind:src="require('@/assets/home/ariel_carignan.jpg')" />
+          <img class="spotlight" alt="Image introuvable" v-bind:src="require('@/assets/home/emmanuel_coutlee.jpg')" />
           <br />
           <br />
-          <p>Ariel Carigan</p>
-          <p>Étudiant au BAC en Génie Logiciel</p>
+          <p>Emmanuel Coutlée</p>
+          <p>Étudiant à la maîtrise en Intelligence Artificielle</p>
         </div>
       </div>
       <div class="card bg-dark">
@@ -101,9 +104,7 @@
           <br />
           <br />
           <h3>Heures d'ouverture du local</h3>
-          <p>Lundi de 10h30 à 11h30</p>
-          <p>Mardi de 9h30 à 11h30</p>
-          <p>Jeudi de 15h00 à 17h00</p>
+          <p>À déterminer</p>
           <br />
           <br />
           <h3>Pour nous contacter</h3>
