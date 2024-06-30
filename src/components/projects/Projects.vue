@@ -2,30 +2,51 @@
   <div>
     <h1>Projets du club</h1>
 
-    <div class="project-container" v-for="(project,index) in projects" v-bind:key="index">
-      <hr />
-      <div class="row" >     
+    <div
+      v-for="(project, index) in projects"
+      :key="index"
+      class="project-container"
+    >
+      <hr>
+      <div class="row">     
         <div class="col-12 col-lg-4 col-xl-3 p-2">
           <div class="w-100 h-100 d-flex justify-content-center align-items-center">
             <div class="embed-responsive embed-responsive-16by9">
-              <img class="embed-responsive-item" v-bind:src="require(`@/assets/projects/${project.mainImagePath}`)" v-on:click="goToProject(index)" alt="Image introuvable">
+              <img
+                class="embed-responsive-item"
+                :src="getImagePath(project.mainImagePath)"
+                alt="Image introuvable"
+                @click="goToProject(index)"
+              >
             </div>
           </div>
         </div>
         <div class="col-12 col-lg-8 col-xl-9 p-2">
           <h2 class="project-title text-center text-lg-left">
-            <a href="javascript:;" class="project-title-link" v-on:click="goToProject(index)">{{project.title}}</a>
+            <a
+              href="javascript:;"
+              class="project-title-link"
+              @click="goToProject(index)"
+            >{{ project.title }}</a>
           </h2>
-          <h5 class="project-description">{{project.description}}</h5>
+          <h5 class="project-description">
+            {{ project.description }}
+          </h5>
           <br>
-          <div v-if="project.participants" class="project-participants">
+          <div
+            v-if="project.participants"
+            class="project-participants"
+          >
             <span class="project-bold-text">Participants: </span>
-            <span>{{project.participants.join(", ")}}</span>
+            <span>{{ project.participants.join(", ") }}</span>
           </div>
           <br>
-          <div v-if="project.event" class="project-event">
+          <div
+            v-if="project.event"
+            class="project-event"
+          >
             <span class="project-bold-text">Événement:</span>
-            {{project.event}}
+            {{ project.event }}
           </div>
         </div>
       </div>
@@ -37,12 +58,19 @@
 import * as projectsDataFile from "./Projects.js"
 
 export default {
-  name: "Projects",
+  name: "ProjectsPage",
   data: () => ({
     projects: []
   }),
 
+  async created() {
+      this.projects = projectsDataFile.projects;
+  },
+
   methods: {
+    getImagePath(imageName) {
+      return `/src/assets/projects/${imageName}`;
+    },
     goToProject: function(index) {
       this.$router.push({
         name: "ProjectOverview",
@@ -51,10 +79,6 @@ export default {
         }
       });
     }
-  },
-
-  async created() {
-      this.projects = projectsDataFile.projects;
   }
 };
 </script>

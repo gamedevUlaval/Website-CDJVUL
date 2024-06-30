@@ -1,15 +1,17 @@
 <template>
   <div>
     <h1>Cette section du site web est en construction! N'hésitez pas à rejoindre le discord et suivre notre page facebook pour les activités à venir!</h1>
-    
   </div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: "InformationPage",
   props: {
-    msg: String
+    msg: {
+      type: String,
+      default: ""
+    }
   }
 };
 </script>

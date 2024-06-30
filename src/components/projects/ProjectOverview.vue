@@ -1,35 +1,46 @@
 <template>
   <div>
-    <h1 class="project-title">{{this.projectInfo.title}}</h1>
-    <h3>{{this.projectInfo.event}}</h3>
-    <h4 class="project-description">{{this.projectInfo.description}}</h4>
+    <h1 class="project-title">
+      {{ projectInfo.title }}
+    </h1>
+    <h3>{{ projectInfo.event }}</h3>
+    <h4 class="project-description">
+      {{ projectInfo.description }}
+    </h4>
 
     <div class="preview-wrapper">
       <div class="embed-responsive embed-responsive-16by9">
         <img 
-          v-if="this.projectInfo.gameplayTrailer == undefined" 
+          v-if="projectInfo.gameplayTrailer == undefined" 
           class="embed-responsive-item" 
-          v-bind:src="require(`@/assets/projects/${this.projectInfo.mainImagePath}`)" 
-          alt="Image introuvable">       
+          :src="getImagePath(projectInfo.mainImagePath)" 
+          alt="Image introuvable"
+        >       
         <iframe
           v-else        
           class="embed-responsive-item"
-          v-bind:src="this.projectInfo.gameplayTrailer"
+          :src="projectInfo.gameplayTrailer"
           allowfullscreen
-        ></iframe>
+        />
       </div>
     </div>
 
-    <h3 class="project-title">Images et art conceptuel</h3>
+    <h3 class="project-title">
+      Images et art conceptuel
+    </h3>
     <div class="container">
       <div class="card-columns">
-        <div class="card" v-for="(image,index) in projectImagesPaths" v-bind:key="index">
+        <div
+          v-for="(image, index) in projectImagesPaths"
+          :key="index"
+          class="card"
+        >
           <img
             class="card-img img-fluid"
-            v-bind:src="image"
+            :src="image"
             alt="Image introuvable"
             @click="showImageModal(image)"
-          />
+          >
         </div>
       </div>
     </div>
@@ -37,8 +48,12 @@
     <h3>Participants</h3>
     <div class="container">
       <div class="list-group d-flex flex-row flex-wrap">
-        <div class="w-50" v-for="participant in projectInfo.participants" v-bind:key="participant">
-          {{participant}}
+        <div
+          v-for="participant in projectInfo.participants"
+          :key="participant"
+          class="w-50"
+        >
+          {{ participant }}
         </div>
       </div>
     </div>
@@ -46,8 +61,15 @@
     <!-- Image Modal -->
     <div v-if="showModal">
       <div class="modal">
-        <span class="close" v-on:click="hideImageModal()">&times;</span>
-        <img class="modal-content img-fluid" v-bind:src="currentImage" alt="Image introuvable" />
+        <span
+          class="close"
+          @click="hideImageModal()"
+        >&times;</span>
+        <img
+          class="modal-content img-fluid"
+          :src="currentImage"
+          alt="Image introuvable"
+        >
       </div>
     </div>
   </div>
@@ -58,15 +80,34 @@ import * as projectsDataFile from "./Projects.js";
 
 export default {
   name: "ProjectOverview",
-  props: ["projectIndex"],
+  props: {
+    projectIndex: {
+      type: Number,
+      required: true
+    }
+  },
   data: () => ({
     projectInfo: undefined,
     showModal: false,
     currentImage: undefined,
     projectImagesPaths: []
-  }),
+  }),  
+
+  async created() {
+    this.projectInfo = projectsDataFile.projects[this.projectIndex];    
+
+    const projectImagesContext = import.meta.glob('@/assets/projects/*/*.@(png|jpg)');
+    Object.keys(projectImagesContext).forEach((key) => {
+      if (key.includes(this.projectInfo.imagesFolder)) {
+        this.projectImagesPaths.push(key);
+      }
+    });
+  },
 
   methods: {
+    getImagePath(imageName) {
+      return `/src/assets/projects/${imageName}`;
+    },
     showImageModal: function(selectedImage) {
       document.body.style.overflow = "hidden";
       this.currentImage = selectedImage;
@@ -78,17 +119,6 @@ export default {
       this.showModal = false;
       this.currentImage = undefined;
     }
-  },  
-
-  async created() {
-    this.projectInfo = projectsDataFile.projects[this.projectIndex];    
-
-    const files = require.context(`@/assets/projects`, true, /\.(png|jpg)$/);
-    files.keys().forEach(key => {
-      if (key.startsWith(`./${this.projectInfo.imagesFolder}`)) {
-        this.projectImagesPaths.push(files(key));
-      }      
-    });
   }
 };
 </script>
