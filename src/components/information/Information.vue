@@ -43,8 +43,7 @@ p {
 }
 
 .carousel .carousel-item img {
-  min-height: 500px;
-  max-height: 500px;
-  min-width: auto;
+  height: 500px;
+  object-fit: cover;
 }
 </style>
