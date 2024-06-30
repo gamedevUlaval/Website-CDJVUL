@@ -5,6 +5,7 @@ import { version } from './package.json';
 
 export default defineConfig({
   plugins: [vue()],
+  base: '/Website-CDJVUL/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

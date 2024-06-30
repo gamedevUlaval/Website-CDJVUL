@@ -1,0 +1,42 @@
+name: Versioning
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        type: choice
+        description: Please select your new version
+        options:
+        - major
+        - minor
+        - patch
+        default: minor
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  Versioning:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+    - name: Git Checkout repository
+      uses: actions/checkout@v4
+      with:
+        show-progress: false
+
+    - name: Set Git user
+      uses: fregante/setup-git-user@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: yarn
+
+    - name: New Version
+      run: |
+        yarn version --${{ github.event.inputs.version }} -m "Version %s"
+        git push --follow-tags
