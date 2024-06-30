@@ -34,6 +34,16 @@ yarn lint
 yarn lint:fix
 ```
 
+### Update website version
+```bash
+#patch
+yarn version:patch
+#minor
+yarn version:minor
+#major
+yarn version:major
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
