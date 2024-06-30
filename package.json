@@ -1,9 +1,9 @@
 {
     "name": "website-cdjvul",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "private": true,
     "engines": {
-      "node": ">=18.0.0"
+        "node": ">=18.0.0"
     },
     "scripts": {
         "dev": "vite",
@@ -11,7 +11,10 @@
         "preview": "vite preview",
         "build": "vite build",
         "lint": "eslint src",
-        "lint:fix": "eslint --fix src"
+        "lint:fix": "eslint --fix src",
+        "version:patch": "yarn version --patch",
+        "version:minor": "yarn version --minor",
+        "version:major": "yarn version --major"
     },
     "dependencies": {
         "bootstrap": "^4.6.0",
