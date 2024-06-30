@@ -1,13 +1,11 @@
-import Vue from "vue";
-import Router from "vue-router";
-import Home from "@/components/home/Home";
+import { createMemoryHistory, createRouter } from "vue-router";
+import Home from "@/components/home/Home.vue";
 import Projet from "@/components/projects/Projects.vue";
 import ProjectOverview from "@/components/projects/ProjectOverview.vue";
-import Information from "@/components/information/Information"
+import Information from "@/components/information/Information.vue"
 
-Vue.use(Router);
-
-let router = new Router({
+let router = createRouter({
+    history: createMemoryHistory(),
     routes: [{
             path: "/",
             name: "Home",
@@ -34,7 +32,7 @@ let router = new Router({
         if (savedPosition) {
             return savedPosition
         } else {
-            return { x: 0, y: 0 }
+            return { left: 0, top: 0 }
         }
     }
 });

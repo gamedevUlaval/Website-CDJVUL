@@ -1,6 +1,5 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark padding-left">
-
     <button
       class="navbar-toggler"
       type="button"
@@ -10,18 +9,41 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" />
     </button>
-    <ul class="navbar-nav collapse navbar-collapse mr-auto mt-lg-0" id="navbarNavAltMarkup">
-      <li><img v-bind:src="require('@/assets/navigation/logoUL_250x104.png')" class="navbar-img"></li>
+    <ul
+      id="navbarNavAltMarkup"
+      class="navbar-nav collapse navbar-collapse mr-auto mt-lg-0"
+    >
       <li>
-        <router-link class="nav-link left-align" to="/">Club de Développement de Jeux Vidéo de l'UL</router-link>
+        <img
+          :src="logoSrc"
+          class="navbar-img"
+        >
+      </li>
+      <li>
+        <router-link
+          class="nav-link left-align"
+          to="/"
+        >
+          Club de Développement de Jeux Vidéo de l'UL
+        </router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link left-align" to="/">Accueil</router-link>
+        <router-link
+          class="nav-link left-align"
+          to="/"
+        >
+          Accueil
+        </router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link left-align" to="/projets">Projets</router-link>
+        <router-link
+          class="nav-link left-align"
+          to="/projets"
+        >
+          Projets
+        </router-link>
       </li>
       <!--<li class="nav-item">
         <router-link class="nav-link left-align" to="/information">Information</router-link>
@@ -31,8 +53,15 @@
 </template>
 
 <script>
+import logoSrc from '@/assets/navigation/logoUL_250x104.png';
+
 export default {
-  name: "Navigation"
+  name: "NavigationMenu",
+  data() {
+    return {
+      logoSrc: logoSrc
+    };
+  }
 };
 </script>
 
