@@ -1,11 +1,11 @@
-import { createMemoryHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router";
 import Home from "@/components/home/Home.vue";
 import Projet from "@/components/projects/Projects.vue";
 import ProjectOverview from "@/components/projects/ProjectOverview.vue";
 import Information from "@/components/information/Information.vue"
 
 let router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHistory(),
     routes: [{
             path: "/",
             name: "Home",

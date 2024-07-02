@@ -96,17 +96,15 @@ export default {
   async created() {
     this.projectInfo = projectsDataFile.projects[this.projectIndex];    
 
-    const projectImagesContext = import.meta.glob('@/assets/projects/*/*.@(png|jpg)');
-    Object.keys(projectImagesContext).forEach((key) => {
-      if (key.includes(this.projectInfo.imagesFolder)) {
-        this.projectImagesPaths.push(key);
-      }
-    });
+    this.projectImagesPaths = this.getAllImagesPath(this.projectInfo.imagesList, this.projectInfo.imagesFolder)
   },
 
   methods: {
     getImagePath(imageName) {
-      return `/src/assets/projects/${imageName}`;
+      return `/projects/${imageName}`;
+    },
+    getAllImagesPath(imagesList, imagesFolder) {
+      return imagesList.map((imageName) => `/projects/${imagesFolder}/${imageName}`)
     },
     showImageModal: function(selectedImage) {
       document.body.style.overflow = "hidden";
