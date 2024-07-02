@@ -91,17 +91,30 @@ The file contains a list of JavaScript objects. To add a project, include a new 
     ],
     mainImagePath: "projectImageFolder/mainImageName.jpg",
     imagesFolder: "projectImageFolder",
+    imagesList: [
+        "ImageName1.png",
+        "ImageName2.png"
+    ],
     gameplayTrailer: "https://www.youtube.com/embed/id"
 }
 ```
 
 ### 2: Adding images
-Place project images in:
+1. Place Project Images:
+    
+    Store all project images in the following directory:
 
 ```
-./src/assets/projects/projectImageFolder
+./public/projects/projectImageFolder
 ```
-Ensure the main image specified in mainImagePath exists in this folder.
+
+1. Update Image List:
+   
+    Add the names of all images to the `imagesList` array.
+
+2. Verify Main Image:
+
+    Ensure the main image specified in `mainImagePath` is present in the above folder.
 
 ### 3: Adding the Youtube trailer (optional)
 To embed a YouTube trailer, get the embed link:
