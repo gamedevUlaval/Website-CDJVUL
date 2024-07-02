@@ -12,9 +12,9 @@
         "build": "vite build",
         "lint": "eslint src",
         "lint:fix": "eslint --fix src",
-        "version:patch": "yarn version --patch",
-        "version:minor": "yarn version --minor",
-        "version:major": "yarn version --major"
+        "version:patch": "yarn version --patch --no-git-tag-version",
+        "version:minor": "yarn version --minor --no-git-tag-version",
+        "version:major": "yarn version --major --no-git-tag-version"
     },
     "dependencies": {
         "bootstrap": "^4.6.0",
