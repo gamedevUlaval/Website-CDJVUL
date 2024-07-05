@@ -16,6 +16,11 @@ export const projects = [
         ],
         mainImagePath: "crisisatrwpinc/CrisisAtRWPIncArt1_1920x1080.png",
         imagesFolder: "crisisatrwpinc",
+        imagesList: [
+            "CrisisAtRWPIncArt1_1920x1080.png",
+            "CrisisAtRWPIncScreenshot1_1920x1080.png",
+            "CrisisAtRWPIncScreenshot2_1920x1080.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/c-q6Ec3AaJs"
     },
     {
@@ -35,6 +40,9 @@ export const projects = [
         ],
         mainImagePath: "nocakeintheabyss/NoCakeInTheAbyssArt1_1920x1080.jpg",
         imagesFolder: "nocakeintheabyss",
+        imagesList: [
+            "NoCakeInTheAbyssArt1_1920x1080.jpg"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/DFYvCSP_PZo"
     },
     {
@@ -50,6 +58,12 @@ export const projects = [
         ],
         mainImagePath: "lighthousesiege/LighthouseSiege_1920x1080.png",
         imagesFolder: "lighthousesiege",
+        imagesList: [
+            "LighthouseSiege_1920x1080.png",
+            "LighthouseSiegeScreenshot1_1920x1080.png",
+            "LighthouseSiegeScreenshot2_1920x1080.png",
+            "LighthouseSiegeScreenshot3_1920x1080.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/KlSZ7rE5SiA"
     },
     {
@@ -69,6 +83,12 @@ export const projects = [
         ],
         mainImagePath: "enracine/EnracineScreenshot1_996x703.png",
         imagesFolder: "enracine",
+        imagesList: [
+            "EnracineConceptArt1_2141x2500.png",
+            "EnracineScreenshot1_996x703.png",
+            "EnracineScreenshot2_1078x576.png",
+            "EnracineScreenshot3_844x598.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/7o_XgrelCYU"
     },
     {
@@ -88,6 +108,12 @@ export const projects = [
         ],
         mainImagePath: "momsout/MomsOutConceptArt1_2400x1350.png",
         imagesFolder: "momsout",
+        imagesList: [
+            "MomsOutConceptArt1_1920x1080.png",
+            "MomsOutConceptArt1_2400x1350.png",
+            "MomsOutScreenshot1_1920x1080.png",
+            "MomsOutScreenshot2_1920x1080.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/uIRdeQ5X_Wo"
     },
     {
@@ -107,6 +133,13 @@ export const projects = [
         ],
         mainImagePath: "lanceleau/TheAdventuresOfLanceleau_1920x1200.png",
         imagesFolder: "lanceleau",
+        imagesList: [
+            "LanceleauScreenshot1_1920x1080.png",
+            "LanceleauScreenshot2_1920x1080.png",
+            "LanceleauScreenshot3_1920x1080.png",
+            "TheAdventuresOfLanceleau_1920x1200.png",
+            "TheAdventuresOfLanceleau_5006x12300.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/9s0_aXsQjgY"
     },
     {
@@ -126,6 +159,13 @@ export const projects = [
         ],
         mainImagePath: "runningdead/RunningDead_1920x1080.png",
         imagesFolder: "runningdead",
+        imagesList: [
+            "RunningDeadConceptArt1_1265x661.png",
+            "RunningDeadConceptArt2_1319x660.png",
+            "RunningDeadConceptArt3_1319x660.png",
+            "RunningDeadConceptArt4_1265x661.jpg",
+            "RunningDead_1920x1080.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/rR_Dg2yAHUM"
     },
     {
@@ -144,6 +184,15 @@ export const projects = [
         ],
         mainImagePath: "youlostmail/YouLostMail_1920x1080.png",
         imagesFolder: "youlostmail",
+        imagesList: [
+            "YouLostMailBackground1_1920x3240.jpg",
+            "YouLostMailBackground2_1920x3240.jpg",
+            "YouLostMailExplosion_1500x1500.png",
+            "YouLostMailScreenshot1_1920x1080.png",
+            "YouLostMailScreenshot2_1920x1080.png",
+            "YouLostMailShip_1500x1500.png",
+            "YouLostMail_1920x1080.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/pS3dUZMLJF0"
     },
     {
@@ -163,6 +212,14 @@ export const projects = [
         ],
         mainImagePath: "wateryoudoing/WaterYouDoingLogo_1920x1200.png",
         imagesFolder: "wateryoudoing",
+        imagesList: [
+            "WaterYouDoingConceptArt1_1650x1275.jpg",
+            "WaterYouDoingConceptArt2_1650x1275.jpg",
+            "WaterYouDoingConceptArt3_1650x1275.jpg",
+            "WaterYouDoingConceptArt4_1650x1275.jpg",
+            "WaterYouDoingLogo_1920x1200.png",
+            "WaterYouDoingNoLogo_12300x5006.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/21q5pgeC_iM"
     },
     {
@@ -181,6 +238,9 @@ export const projects = [
         ],
         mainImagePath: "trap/Trap_1142x848.png",
         imagesFolder: "trap",
+        imagesList: [
+            "Trap_1142x848.png"
+        ],
         gameplayTrailer: "https://www.youtube.com/embed/alKR4yRsPXM"
     },
     // {
@@ -194,6 +254,9 @@ export const projects = [
     //     ],
     //     mainImagePath: "clubmanchot/ClubManchot_519x428.png",
     //     imagesFolder: "clubmanchot"
+    //     imagesList: [
+    //         "ClubManchot_519x428.png"
+    //     ],
     // }
     // {
     //     title: "Sew World",

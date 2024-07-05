@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path';
 import { version } from './package.json';
 
-export default defineConfig({
+const BASE_CONFIG = {
   plugins: [vue()],
   base: '/Website-CDJVUL/',
   resolve: {
@@ -14,4 +14,12 @@ export default defineConfig({
   define: {
     __APP_VERSION__: JSON.stringify(version),
   },
+}
+
+export default defineConfig(({ mode }) => {
+  if (mode === 'development') {
+    return BASE_CONFIG
+  } else {
+    return { ...BASE_CONFIG, base: '/Website-CDJVUL/' };
+  }
 })

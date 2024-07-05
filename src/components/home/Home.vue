@@ -197,7 +197,7 @@ export default {
 
   methods: {
     getImagePath(imageName) {
-      return `/src/assets/projects/${imageName}`;
+      return `/projects/${imageName}`;
     }
   }
 };
