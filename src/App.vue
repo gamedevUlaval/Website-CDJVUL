@@ -1,5 +1,8 @@
 <template>
-  <div id="app" class="container-custom">
+  <div
+    id="app"
+    class="container-custom"
+  >
     <Navigation />
     <router-view class="container-custom" />
   </div>
@@ -8,7 +11,7 @@
 <script>
 import Navigation from "@/components/navigation/Navigation.vue";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap 5 CSS
-import { createPopper } from '@popperjs/core'; // Import @popperjs/core for Popper functionality
+// Import @popperjs/core for Popper functionality
 
 export default {
   name: "App",

@@ -24,13 +24,13 @@
             data-bs-target="#carousel-project-images"
             data-bs-slide-to="0"
             class="active"
-          ></span>
+          />
           <span
             v-for="(project, index) in projects"
             :key="index"
             data-bs-target="#carousel-project-images"
             :data-bs-slide-to="index+1"
-          ></span>
+          />
         </div>
         <!-- Slides -->
         <div class="carousel-inner">
@@ -64,7 +64,10 @@
           role="button"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+          />
           <span class="visually-hidden">Previous</span>
         </a>
         <a
@@ -73,7 +76,10 @@
           role="button"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+          />
           <span class="visually-hidden">Next</span>
         </a>
       </div>
@@ -83,19 +89,33 @@
       <div class="col">
         <div class="card bg-dark text-white h-100">
           <div class="card-body text-center">
-            <h3 class="card-title">Restez à jour sur les événements</h3>
+            <h3 class="card-title">
+              Restez à jour sur les événements
+            </h3>
             <div>
               <br>
-              <a href="https://www.facebook.com/gamedevUlaval/" target="_blank">
+              <a
+                href="https://www.facebook.com/gamedevUlaval/"
+                target="_blank"
+              >
                 <div class="d-flex align-items-center justify-content-center">
-                  <img :src="facebookIcon" class="icons-link rounded-lg">
+                  <img
+                    :src="facebookIcon"
+                    class="icons-link rounded-lg"
+                  >
                   <span class="icon-box">Facebook</span>
                 </div>
               </a>
               <br>
-              <a href="https://discord.gg/w5waVkPKTj" target="_blank">
+              <a
+                href="https://discord.gg/w5waVkPKTj"
+                target="_blank"
+              >
                 <div class="d-flex align-items-center justify-content-center">
-                  <img :src="discordIcon" class="icons-link rounded-lg">
+                  <img
+                    :src="discordIcon"
+                    class="icons-link rounded-lg"
+                  >
                   <span class="icon-box">Discord</span>
                 </div>
               </a>
@@ -111,9 +131,15 @@
       <div class="col">
         <div class="card bg-dark text-white h-100">
           <div class="card-body text-center">
-            <h3 class="card-title">Responsable du club</h3>
+            <h3 class="card-title">
+              Responsable du club
+            </h3>
             <br>
-            <img class="spotlight" alt="Image introuvable" :src="presidentImage">
+            <img
+              class="spotlight"
+              alt="Image introuvable"
+              :src="presidentImage"
+            >
             <br><br>
             <p>Emmanuel Coutlée</p>
             <p>Étudiant à la maîtrise en Intelligence Artificielle</p>
@@ -123,7 +149,9 @@
       <div class="col">
         <div class="card bg-dark text-white h-100">
           <div class="card-body text-center">
-            <h3 class="card-title">Où nous trouver?</h3>
+            <h3 class="card-title">
+              Où nous trouver?
+            </h3>
             <p>1065 avenue de la Médecine, Québec, Canada</p>
             <p>Pavillon Adrien-Pouliot</p>
             <p>Local PLT-3778</p>

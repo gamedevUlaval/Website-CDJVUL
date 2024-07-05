@@ -9,7 +9,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" />
     </button>
     <div
       id="navbarNavAltMarkup"
@@ -20,7 +20,7 @@
           <img
             :src="logoSrc"
             class="navbar-img"
-          />
+          >
         </li>
         <li class="nav-item">
           <router-link
