@@ -34,7 +34,17 @@ yarn lint
 yarn lint:fix
 ```
 
-### Update website version
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Update semantic version
+
+You can update the version number manually or by using the GitHub action `Versioning`.
+
+### using yarn command
+
+To update the version number with Yarn, use the following commands:
+
 ```bash
 #patch
 yarn version:patch
@@ -44,11 +54,20 @@ yarn version:minor
 yarn version:major
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### using Github action
+
+To update the version number with GitHub actions:
+
+- In the GitHub repository, go to the Actions tab.
+- On the left, select the Versioning workflow.
+- On the right, click Run workflow.
+- Choose whether the new version is a major, minor, or patch update.
+- Run the workflow on the `main` branch.
+- Since the GitHub action cannot push directly to the main branch, a pull request will be created.
+- Review and merge the pull request to update the version.
 
 ## Deploy the website in production
-- Create a new version using the Github `Versioning` action.
+- Create a new version. Do it manually or use the Github action `Versioning`. See above section `Update semantic version` for details.
 - Reset the `deploy` branch on the new version to include the change you want to deploy. 
 - Push the `deploy` branch. The GitHub action will build and deploy the updated website to Github pages.
 
@@ -72,17 +91,30 @@ The file contains a list of JavaScript objects. To add a project, include a new 
     ],
     mainImagePath: "projectImageFolder/mainImageName.jpg",
     imagesFolder: "projectImageFolder",
+    imagesList: [
+        "ImageName1.png",
+        "ImageName2.png"
+    ],
     gameplayTrailer: "https://www.youtube.com/embed/id"
 }
 ```
 
 ### 2: Adding images
-Place project images in:
+1. Place Project Images:
+    
+    Store all project images in the following directory:
 
 ```
-./src/assets/projects/projectImageFolder
+./public/projects/projectImageFolder
 ```
-Ensure the main image specified in mainImagePath exists in this folder.
+
+1. Update Image List:
+   
+    Add the names of all images to the `imagesList` array.
+
+2. Verify Main Image:
+
+    Ensure the main image specified in `mainImagePath` is present in the above folder.
 
 ### 3: Adding the Youtube trailer (optional)
 To embed a YouTube trailer, get the embed link:

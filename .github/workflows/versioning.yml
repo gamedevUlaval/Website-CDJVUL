@@ -12,10 +12,6 @@ on:
         - patch
         default: minor
 
-permissions:
-  contents: write
-  id-token: write
-
 jobs:
   Versioning:
     runs-on: ubuntu-latest
@@ -36,10 +32,20 @@ jobs:
         node-version: '20'
         cache: yarn
 
-    - name: Release
-      uses: softprops/action-gh-release@v2
-      if: startsWith(github.ref, 'refs/tags/')
+    - name: New Version
+      run: |
+        git checkout -b new-version
+        yarn version --${{ github.event.inputs.version }} --no-git-tag-version
+        VERSION=$(jq -r .version package.json)
+        echo "VERSION=${VERSION}" >> $GITHUB_ENV
+        git push origin new-version
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
       with:
-        body_path: ${{ github.workspace }}-CHANGELOG.md
-        repository: CDJVUL/Website-CDJVUL
         token: ${{ secrets.GITHUB_TOKEN }}
+        branch: new-version
+        title: 'Update version to ${{ env.VERSION }}'
+        body: 'This PR updates the version to ${{ env.VERSION }}.'
+        commit-message: 'Version ${{ env.VERSION }}'
+        base: main
