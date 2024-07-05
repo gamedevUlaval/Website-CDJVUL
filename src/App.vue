@@ -3,14 +3,6 @@
     id="app"
     class="container-custom"
   >
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-      crossorigin="anonymous"
-    >
-
-
     <Navigation />
     <router-view class="container-custom" />
   </div>
@@ -18,6 +10,8 @@
 
 <script>
 import Navigation from "@/components/navigation/Navigation.vue";
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap 5 CSS
+// Import @popperjs/core for Popper functionality
 
 export default {
   name: "App",
@@ -27,7 +21,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -35,10 +29,12 @@ export default {
   text-align: center;
   min-height: 100%;
 }
+
 .container-custom {
   background-color: #282b2e;
   color: white;
 }
+
 html,
 body {
   height: 100%;

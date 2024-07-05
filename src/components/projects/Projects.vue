@@ -8,12 +8,12 @@
       class="project-container"
     >
       <hr>
-      <div class="row">     
+      <div class="row">
         <div class="col-12 col-lg-4 col-xl-3 p-2">
           <div class="w-100 h-100 d-flex justify-content-center align-items-center">
-            <div class="embed-responsive embed-responsive-16by9">
+            <div class="ratio ratio-16x9">
               <img
-                class="embed-responsive-item"
+                class="img-fluid"
                 :src="getImagePath(project.mainImagePath)"
                 alt="Image introuvable"
                 @click="goToProject(index)"
@@ -55,7 +55,7 @@
 </template>
 
 <script>
-import * as projectsDataFile from "./Projects.js"
+import * as projectsDataFile from "./Projects.js";
 
 export default {
   name: "ProjectsPage",
@@ -64,7 +64,7 @@ export default {
   }),
 
   async created() {
-      this.projects = projectsDataFile.projects;
+    this.projects = projectsDataFile.projects;
   },
 
   methods: {
@@ -74,8 +74,8 @@ export default {
     goToProject: function(index) {
       this.$router.push({
         name: "ProjectOverview",
-        params: { 
-          projectIndex: index     
+        params: {
+          projectIndex: index
         }
       });
     }
@@ -99,13 +99,13 @@ hr {
   margin-bottom: 10px;
 }
 img:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-.project-title{
+.project-title {
   margin-bottom: 1rem;
 }
-.project-title-link{  
-  color:white;
+.project-title-link {
+  color: white;
 }
 .project-description {
   text-align: left;
@@ -117,6 +117,6 @@ img:hover {
   text-align: left;
 }
 .project-bold-text {
-  font-weight:bold;
+  font-weight: bold;
 }
 </style>

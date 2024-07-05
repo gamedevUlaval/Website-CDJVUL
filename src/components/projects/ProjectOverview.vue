@@ -29,14 +29,14 @@
       Images et art conceptuel
     </h3>
     <div class="container">
-      <div class="card-columns">
+      <div class="row">
         <div
           v-for="(image, index) in projectImagesPaths"
           :key="index"
-          class="card"
+          class="col-md-4 mb-3"
         >
           <img
-            class="card-img img-fluid"
+            class="img-fluid card-img"
             :src="image"
             alt="Image introuvable"
             @click="showImageModal(image)"
@@ -91,10 +91,10 @@ export default {
     showModal: false,
     currentImage: undefined,
     projectImagesPaths: []
-  }),  
+  }),
 
   async created() {
-    this.projectInfo = projectsDataFile.projects[this.projectIndex];    
+    this.projectInfo = projectsDataFile.projects[this.projectIndex];
 
     this.projectImagesPaths = this.getAllImagesPath(this.projectInfo.imagesList, this.projectInfo.imagesFolder)
   },
@@ -106,13 +106,13 @@ export default {
     getAllImagesPath(imagesList, imagesFolder) {
       return imagesList.map((imageName) => `/projects/${imagesFolder}/${imageName}`)
     },
-    showImageModal: function(selectedImage) {
+    showImageModal: function (selectedImage) {
       document.body.style.overflow = "hidden";
       this.currentImage = selectedImage;
       this.showModal = true;
     },
 
-    hideImageModal: function() {
+    hideImageModal: function () {
       document.body.style.overflow = "auto";
       this.showModal = false;
       this.currentImage = undefined;
