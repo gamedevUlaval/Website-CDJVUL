@@ -6,7 +6,7 @@
     <Navigation />
     <router-view class="container-custom" />
 
-    <hr class="version-separator" />
+    <hr class="version-separator">
 
     <div class="text-center version-container">
       Siteweb version: {{ version }}

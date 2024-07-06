@@ -27,9 +27,9 @@
             class="active"
           />
           <button
-            type="button"
             v-for="(project, index) in projects"
             :key="index"
+            type="button"
             data-bs-target="#carousel-project-images"
             :data-bs-slide-to="index+1"
           />
