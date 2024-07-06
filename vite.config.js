@@ -5,7 +5,6 @@ import { version } from './package.json';
 
 const BASE_CONFIG = {
   plugins: [vue()],
-  base: '/Website-CDJVUL/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
