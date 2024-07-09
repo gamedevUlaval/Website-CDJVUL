@@ -9,7 +9,7 @@
     </h4>
 
     <div class="preview-wrapper">
-      <div class="embed-responsive embed-responsive-16by9">
+      <div class="ratio ratio-16x9">
         <img 
           v-if="projectInfo.gameplayTrailer == undefined" 
           class="embed-responsive-item" 
@@ -18,7 +18,6 @@
         >       
         <iframe
           v-else        
-          class="embed-responsive-item"
           :src="projectInfo.gameplayTrailer"
           allowfullscreen
         />
@@ -82,7 +81,7 @@ export default {
   name: "ProjectOverview",
   props: {
     projectIndex: {
-      type: Number,
+      type: String,
       required: true
     }
   },
@@ -137,7 +136,7 @@ export default {
   width: 100%;
   height: 100%;
   max-width: 1000px;
-  max-height: 400px;
+  max-height: 565px;
 }
 .container {
   padding: 1rem;

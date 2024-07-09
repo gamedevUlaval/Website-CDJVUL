@@ -19,15 +19,17 @@
         data-bs-interval="5000"
       >
         <!-- Indicators -->
-        <div class="carousel-indicators custom-indicators">
-          <span
+        <div class="carousel-indicators">
+          <button
+            type="button"
             data-bs-target="#carousel-project-images"
             data-bs-slide-to="0"
             class="active"
           />
-          <span
+          <button
             v-for="(project, index) in projects"
             :key="index"
+            type="button"
             data-bs-target="#carousel-project-images"
             :data-bs-slide-to="index+1"
           />
@@ -58,7 +60,8 @@
           </div>
         </div>
         <!-- Controls -->
-        <a
+        <button
+          type="button"
           class="carousel-control-prev"
           href="#carousel-project-images"
           role="button"
@@ -69,8 +72,9 @@
             aria-hidden="true"
           />
           <span class="visually-hidden">Previous</span>
-        </a>
-        <a
+        </button>
+        <button
+          type="button"
           class="carousel-control-next"
           href="#carousel-project-images"
           role="button"
@@ -81,7 +85,7 @@
             aria-hidden="true"
           />
           <span class="visually-hidden">Next</span>
-        </a>
+        </button>
       </div>
     </div>
 
@@ -101,7 +105,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <img
                     :src="facebookIcon"
-                    class="icons-link rounded-lg"
+                    class="icons-link rounded-2"
                   >
                   <span class="icon-box">Facebook</span>
                 </div>
@@ -114,7 +118,7 @@
                 <div class="d-flex align-items-center justify-content-center">
                   <img
                     :src="discordIcon"
-                    class="icons-link rounded-lg"
+                    class="icons-link rounded-2"
                   >
                   <span class="icon-box">Discord</span>
                 </div>
@@ -166,9 +170,6 @@
       </div>
     </div>
   </div>
-  <div class="text-center">
-    Siteweb version: {{ version }}
-  </div>
 </template>
 
 <script>
@@ -187,7 +188,6 @@ export default {
       facebookIcon: facebookIcon,
       discordIcon: discordIcon,
       presidentImage: presidentImage,
-      version: __APP_VERSION__
     };
   },
 
@@ -247,12 +247,6 @@ p {
   width: 60%;
 }
 
-.custom-indicators {
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-}
-
 .custom-indicators span {
   background-color: white;
   border: 1px solid white;
@@ -262,10 +256,6 @@ p {
   height: 10px;
   margin: 0 5px;
   width: 10px;
-}
-
-.custom-indicators .active {
-  background-color: black;
 }
 
 /* On screens that are 992px or less, make image carousel take up 100% of screen width */

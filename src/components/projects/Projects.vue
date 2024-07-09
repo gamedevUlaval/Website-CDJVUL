@@ -97,6 +97,7 @@ hr {
   background-color: white;
   border-color: white;
   margin-bottom: 10px;
+  opacity: 1;
 }
 img:hover {
   cursor: pointer;

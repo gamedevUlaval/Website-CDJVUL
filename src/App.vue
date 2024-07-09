@@ -5,23 +5,33 @@
   >
     <Navigation />
     <router-view class="container-custom" />
+
+    <hr class="version-separator">
+
+    <div class="text-center version-container">
+      Siteweb version: {{ version }}
+    </div>
   </div>
 </template>
 
 <script>
 import Navigation from "@/components/navigation/Navigation.vue";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap 5 CSS
-// Import @popperjs/core for Popper functionality
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   name: "App",
   components: {
     Navigation
-  }
+  },
+  data() {
+    return {
+      version: __APP_VERSION__
+    };
+  },
 };
 </script>
 
-<style scoped>
+<style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -31,13 +41,23 @@ export default {
 }
 
 .container-custom {
-  background-color: #282b2e;
   color: white;
+}
+
+.version-separator {
+  opacity: .5;
+  margin: 10px auto;
+  width: 250px;
+}
+
+.version-container {
+  margin: 5px 0 10px;
 }
 
 html,
 body {
   height: 100%;
   margin: 0;
+  background-color: #282b2e;
 }
 </style>
