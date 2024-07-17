@@ -63,7 +63,7 @@ export default {
     projects: []
   }),
 
-  async created() {
+  created() {
     this.projects = projectsDataFile.projects;
   },
 
@@ -71,7 +71,7 @@ export default {
     getImagePath(imageName) {
       return new URL(`../../assets/projects/${imageName}`, import.meta.url).href;
     },
-    goToProject: function(index) {
+    goToProject(index) {
       this.$router.push({
         name: "ProjectOverview",
         params: {

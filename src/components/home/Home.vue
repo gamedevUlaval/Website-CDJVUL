@@ -174,9 +174,9 @@
 
 <script>
 import * as projectsDataFile from "../projects/Projects.js";
-import logoPath from '@/assets/home/logo_cdjvul_1920x1080.png';
-import facebookIcon from '@/assets/home/Facebook.svg.png';
 import discordIcon from '@/assets/home/discord.jpg';
+import facebookIcon from '@/assets/home/Facebook.svg.png';
+import logoPath from '@/assets/home/logo_cdjvul_1920x1080.png';
 import presidentImage from '@/assets/home/emmanuel_coutlee.jpg';
 
 export default {
@@ -184,14 +184,14 @@ export default {
   data() {
     return {
       projects: [],
-      logoPath: logoPath,
-      facebookIcon: facebookIcon,
-      discordIcon: discordIcon,
-      presidentImage: presidentImage,
+      logoPath,
+      facebookIcon,
+      discordIcon,
+      presidentImage,
     };
   },
 
-  async created() {
+  created() {
     this.projects = projectsDataFile.projects;
   },
 

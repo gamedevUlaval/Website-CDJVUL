@@ -86,13 +86,13 @@ export default {
     }
   },
   data: () => ({
-    projectInfo: undefined,
+    projectInfo: null,
     showModal: false,
-    currentImage: undefined,
+    currentImage: null,
     projectImagesPaths: []
   }),
 
-  async created() {
+  created() {
     this.projectInfo = projectsDataFile.projects[this.projectIndex];
 
     this.projectImagesPaths = this.getAllImagesPath(this.projectInfo.imagesList, this.projectInfo.imagesFolder)
@@ -105,16 +105,16 @@ export default {
     getAllImagesPath(imagesList, imagesFolder) {
       return imagesList.map((imageName) => new URL(`../../assets/projects/${imagesFolder}/${imageName}`, import.meta.url).href)
     },
-    showImageModal: function (selectedImage) {
+    showImageModal(selectedImage) {
       document.body.style.overflow = "hidden";
       this.currentImage = selectedImage;
       this.showModal = true;
     },
 
-    hideImageModal: function () {
+    hideImageModal() {
       document.body.style.overflow = "auto";
       this.showModal = false;
-      this.currentImage = undefined;
+      this.currentImage = null;
     }
   }
 };
