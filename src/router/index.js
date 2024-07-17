@@ -5,7 +5,7 @@ import ProjectOverview from "@/components/projects/ProjectOverview.vue";
 import Information from "@/components/information/Information.vue"
 
 let router = createRouter({
-    history: createWebHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes: [{
             path: "/",
             name: "Home",

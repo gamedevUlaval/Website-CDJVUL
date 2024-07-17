@@ -100,10 +100,10 @@ export default {
 
   methods: {
     getImagePath(imageName) {
-      return `/projects/${imageName}`;
+      return new URL(`../../assets/projects/${imageName}`, import.meta.url).href;
     },
     getAllImagesPath(imagesList, imagesFolder) {
-      return imagesList.map((imageName) => `/projects/${imagesFolder}/${imageName}`)
+      return imagesList.map((imageName) => new URL(`../../assets/projects/${imagesFolder}/${imageName}`, import.meta.url).href)
     },
     showImageModal: function (selectedImage) {
       document.body.style.overflow = "hidden";

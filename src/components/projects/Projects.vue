@@ -69,7 +69,7 @@ export default {
 
   methods: {
     getImagePath(imageName) {
-      return `/projects/${imageName}`;
+      return new URL(`../../assets/projects/${imageName}`, import.meta.url).href;
     },
     goToProject: function(index) {
       this.$router.push({
