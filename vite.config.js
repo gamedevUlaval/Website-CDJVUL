@@ -19,6 +19,6 @@ export default defineConfig(({ mode }) => {
   if (mode === 'development') {
     return BASE_CONFIG
   } else {
-    return { ...BASE_CONFIG, base: '/Website-CDJVUL/' };
+    return { ...BASE_CONFIG, base: '/Website-CDJVUL/'};
   }
 })
