@@ -63,7 +63,7 @@ export default {
   name: "NavigationMenu",
   data() {
     return {
-      logoSrc: logoSrc
+      logoSrc
     };
   }
 };

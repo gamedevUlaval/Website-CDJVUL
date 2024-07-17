@@ -1,10 +1,10 @@
-import { createWebHistory, createRouter } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Home from "@/components/home/Home.vue";
-import Projet from "@/components/projects/Projects.vue";
-import ProjectOverview from "@/components/projects/ProjectOverview.vue";
 import Information from "@/components/information/Information.vue"
+import ProjectOverview from "@/components/projects/ProjectOverview.vue";
+import Projects from "@/components/projects/Projects.vue";
 
-let router = createRouter({
+const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [{
             path: "/",
@@ -14,7 +14,7 @@ let router = createRouter({
         {
             path: "/projets",
             name: "Projects",
-            component: Projet,
+            component: Projects,
         },
         {
             path: "/projets/:projectIndex",
@@ -31,9 +31,8 @@ let router = createRouter({
     scrollBehavior (to, from, savedPosition) {
         if (savedPosition) {
             return savedPosition
-        } else {
-            return { left: 0, top: 0 }
         }
+        return { left: 0, top: 0 }
     }
 });
 

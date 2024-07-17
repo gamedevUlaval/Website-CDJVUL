@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import Navigation from "@/components/navigation/Navigation.vue";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from "@/components/navigation/Navigation.vue";
 
 export default {
   name: "App",
