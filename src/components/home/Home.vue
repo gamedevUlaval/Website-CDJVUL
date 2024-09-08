@@ -112,7 +112,7 @@
               </a>
               <br>
               <a
-                href="https://discord.gg/yFQpaspDFV"
+                href="https://discord.gg/w5waVkPKTj"
                 target="_blank"
               >
                 <div class="d-flex align-items-center justify-content-center">
@@ -145,8 +145,8 @@
               :src="presidentImage"
             >
             <br><br>
-            <p>Maxime Plourde</p>
-            <p>Étudiant au Baccalauréat en informatique</p>
+            <p>Emmanuel Coutlée</p>
+            <p>Étudiant à la maîtrise en Intelligence Artificielle</p>
           </div>
         </div>
       </div>
@@ -177,7 +177,7 @@ import * as projectsDataFile from "../projects/Projects.js";
 import discordIcon from '@/assets/home/discord.jpg';
 import facebookIcon from '@/assets/home/Facebook.svg.png';
 import logoPath from '@/assets/home/logo_cdjvul_1920x1080.png';
-import presidentImage from '@/assets/home/maxime_plourde.jpg';
+import presidentImage from '@/assets/home/emmanuel_coutlee.jpg';
 
 export default {
   name: "HomePage",
