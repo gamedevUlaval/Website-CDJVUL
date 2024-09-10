@@ -71,6 +71,16 @@ To update the version number with GitHub actions:
 - Reset the `deploy` branch on the new version to include the change you want to deploy. 
 - Push the `deploy` branch. The GitHub action will build and deploy the updated website to Github pages.
 
+### Redirection from Ulaval website
+Initially, the website was directly hosted on Laval University's servers. To enable easier releases through GitHub Pages while retaining the original FSG URL (https://gamedev.fsg.ulaval.ca), we implemented a URL redirect. This redirect ensures that visitors are always directed to https://cdjvul.github.io/Website-CDJVUL/.
+
+In most cases, no further changes are needed for the redirect, but if updates are required, follow these steps:
+- Ensure you're on campus or connected via the Laval University VPN. For VPN access, visit this page: https://www.ulaval.ca/technologies-de-linformation/connexion-au-reseau-de-luniversite
+- Access the server at: https://fsg-hbw-p-cpn02.fsg.ulaval.ca:2083.
+- Log in with the username gamedevfsgulaval. If you need the password, contact a club administrator.
+- In the control panel, navigate to: Domains -> Redirects.
+- You’ll see the current redirect at the bottom of the page, and you can add a new one using the options above.
+
 ## Adding a project to the projects page
 
 ### 1: Adding the data
