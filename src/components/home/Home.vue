@@ -123,11 +123,6 @@
                   <span class="icon-box">Discord</span>
                 </div>
               </a>
-              <br>
-              <a
-                style="font-size: 1.75rem"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfM7rsdwywJ00xK1Kmowq59YvUX-SsID-as5uY6ghEOJ0o-TA/viewform?usp=pp_url"
-              >Inscrivez-vous officiellement au club ici!</a>
             </div>
           </div>
         </div>
